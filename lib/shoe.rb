@@ -9,7 +9,7 @@ BRANDS = []
     BRANDS << brand
     BRANDS.collect do |unique| 
       unique.uniq
-  
+  end
   end
 
   def cobble
