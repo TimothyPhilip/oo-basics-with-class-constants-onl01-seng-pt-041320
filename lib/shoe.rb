@@ -6,10 +6,9 @@ BRANDS = []
 
   def initialize(brand)
     @brand = brand
-    BRANDS << brand
-    BRANDS.collect do |unique| 
-      if unique.include?(brand)
-    end
+    if !BRANDS.include?(brand)
+  BRANDS << brand
+end
   end
   
   end
