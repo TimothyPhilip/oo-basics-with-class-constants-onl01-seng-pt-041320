@@ -8,7 +8,7 @@ BRANDS = []
     @brand = brand
     BRANDS << brand
     BRANDS.collect do |unique| 
-      if unique.include?(brand <= 1)
+      if unique.include?(brand)
     end
   end
   
