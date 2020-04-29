@@ -7,9 +7,11 @@ BRANDS = []
   def initialize(brand)
     @brand = brand
     BRANDS << brand
-    BRANDS.each do |unique| 
-      unique.uniq
+    BRANDS.collect do |unique| 
+      if unique.include?(brand)
+    end
   end
+  
   end
 
   def cobble
