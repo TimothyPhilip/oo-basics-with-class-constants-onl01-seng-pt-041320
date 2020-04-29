@@ -8,7 +8,7 @@ BRANDS = []
     @brand = brand
     BRANDS << brand
     BRANDS.collect do |unique| 
-      if unique.include
+      unique.uniq
   
   end
 
