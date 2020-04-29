@@ -7,7 +7,7 @@ BRANDS = []
   def initialize(brand)
     @brand = brand
     BRANDS << brand
-    BRANDS.collect do |unique| 
+    BRANDS.each do |unique| 
       unique.uniq
   end
   end
